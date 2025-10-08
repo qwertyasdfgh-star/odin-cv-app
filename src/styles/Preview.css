@@ -1,0 +1,287 @@
+.cv-preview {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 0;
+  width: 100%;
+  max-width: 816px;
+  margin: 0 auto;
+  min-height: 1056px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  color: #333333;
+}
+
+.cv-sidebar {
+  width: 260px;
+  background-color: #f5f5f5;
+  padding: 2.5rem 1.5rem;
+}
+
+.cv-main {
+  flex: 1;
+  padding: 2.5rem 2rem;
+  background-color: #ffffff;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #2c3e50;
+}
+
+.profile-picture {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-picture i {
+  font-size: 70px;
+  color: #2c3e50;
+}
+
+.cv-name {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.cv-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 13px;
+  color: #4a4a4a;
+}
+
+.contact-item i {
+  color: #2c3e50;
+  width: 16px;
+}
+
+.sidebar-section {
+  margin-bottom: 2rem;
+}
+
+.sidebar-section h2 {
+  color: #2c3e50;
+  font-size: 16px;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #2c3e50;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.skills-list,
+.interests-list{
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills-list li,
+.interests-list li,
+.languages-list li{
+  color: #4a4a4a;
+  font-size: 13px;
+  padding: 0.25rem 0;
+  line-height: 1.4;
+  display: list-item;
+  width: 100%;
+}
+
+.main-section {
+  margin-bottom: 2.5rem;
+}
+
+.main-section h2 {
+  color: #2c3e50;
+  font-size: 18px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.section-item {
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.item-header h3 {
+  font-size: 16px;
+  color: #2c3e50;
+  margin: 0;
+  font-weight: 600;
+}
+
+.date {
+  color: #666666;
+  font-size: 13px;
+}
+
+.section-item h4 {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin: 0.25rem 0;
+  font-weight: 500;
+}
+
+.location {
+  font-size: 13px;
+  color: #666666;
+  margin: 0.25rem 0;
+}
+
+.description {
+  margin-top: 0.75rem;
+  font-size: 13px;
+  color: #4a4a4a;
+  white-space: pre-line;
+  line-height: 1.6;
+}
+
+.summary-section {
+  margin-bottom: 2.5rem;
+}
+
+.summary-text {
+  color: #4a4a4a;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.empty-section {
+  color: #999;
+  font-style: italic;
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .cv-preview {
+    flex-direction: column;
+  }
+
+  .cv-sidebar {
+    width: 100%;
+  }
+
+  .profile-picture {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.profile-picture {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.languages-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.languages-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #4a4a4a;
+  font-size: 13px;
+}
+
+.language {
+  font-weight: 500;
+}
+
+.proficiency {
+  color: #666;
+  font-style: italic;
+}
+
+.references-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.reference-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.reference-item:last-child {
+  border-bottom: none;
+}
+
+.reference-item h3 {
+  color: #2c3e50;
+  font-size: 16px;
+  margin-bottom: 0.25rem;
+}
+
+.reference-position {
+  color: #666;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.reference-company {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.reference-contact {
+  display: flex;
+  gap: 1rem;
+  font-size: 13px;
+  color: #666;
+}

@@ -1,0 +1,95 @@
+.practical-entry {
+  background-color: rgba(var(--accent-primary-rgb), 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.practical-entry:hover {
+  box-shadow: 0 4px 8px rgba(0, 255, 157, 0.1);
+}
+
+.form-row {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-row.two-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.practical-entry label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+  font-weight: 500;
+}
+
+.practical-entry input,
+.practical-entry textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--accent-secondary);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: var(--font-sm);
+  transition: all 0.3s ease;
+}
+
+.practical-entry textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.practical-entry input:focus,
+.practical-entry textarea:focus {
+  outline: none;
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(0, 255, 157, 0.2);
+}
+
+.delete-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  color: var(--error);
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.delete-btn:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.date-input-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.present-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: var(--font-sm);
+}
+
+.present-checkbox input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}

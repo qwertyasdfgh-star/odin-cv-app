@@ -1,0 +1,55 @@
+.language-entry {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 2px solid var(--text-primary);
+  transition: all 0.3s ease;
+  margin-bottom: 0.5rem;
+}
+
+.language-entry input {
+  flex: 1;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: var(--font-sm);
+  width: 150px;
+}
+
+.language-entry select {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: var(--font-sm);
+  min-width: 100px;
+  cursor: pointer;
+}
+
+.language-entry input:focus,
+.language-entry select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent-primary);
+}
+
+.language-entry .delete-btn {
+  background: transparent;
+  border: none;
+  color: var(--error);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+.language-entry .delete-btn:hover {
+  background-color: rgba(255, 68, 68, 0.1);
+  border-radius: 50%;
+}
